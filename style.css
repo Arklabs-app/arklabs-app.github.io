@@ -6,3 +6,7 @@
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
 
 .map-index{font-size:13px;color:var(--gold);line-height:1.9;margin:-8px 0 28px;max-width:840px}
+
+/* Frame the existing artwork's teal orbital edge on phones instead of cropping
+   its intentionally empty desktop centre. Keep the original image proportions. */
+@media(max-width:900px){body{background-size:auto,1200px auto;background-position:center top,left 96px}}
